@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import { RouterLink } from "vue-router";
-import { ref } from "vue";
+import { RouterLink } from 'vue-router';
+import { ref } from 'vue';
 
 const navbarItems = [
-  { name: "Home", path: "/" },
-  { name: "About", path: "/#about", hash: "#about" },
-  { name: "What I do", path: "/#what-i-do", hash: "#what-i-do" },
-  { name: "Projects", path: "/#projects", hash: "#projects" },
-  { name: "Contact", path: "/#contact", hash: "#contact" },
+  { name: 'Home', path: '/' },
+  { name: 'About', path: '/#about', hash: '#about' },
+  { name: 'What I do', path: '/#what-i-do', hash: '#what-i-do' },
+  { name: 'Projects', path: '/#projects', hash: '#projects' },
+  { name: 'Contact', path: '/#contact', hash: '#contact' }
 ];
 
 const isDropdownActive = ref(false);
@@ -31,7 +31,10 @@ function toggleDropdown() {
         <div class="md:flex md:gap-2">
           <nav class="hidden md:block">
             <ul class="flex items-center gap-6 text-lg">
-              <li v-for="item in navbarItems" :key="item.name">
+              <li
+                v-for="item in navbarItems"
+                :key="item.name"
+              >
                 <RouterLink
                   class="text-base my-text-color-navbar my-animate my-on-hover-opacity"
                   :to="{ path: item.path, hash: item.hash }"

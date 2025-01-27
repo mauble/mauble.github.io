@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import Text from "@/components/Text.vue";
-import WhatIDo from "@/components/WhatIDo.vue";
-import Projects from "@/components/Projects.vue";
+import Text from '@/components/Text.vue';
+import WhatIDo from '@/components/WhatIDo.vue';
+import Projects from '@/components/Projects.vue';
 
-import GlitchedWriter from "vue-glitched-writer";
+import GlitchedWriter from 'vue-glitched-writer';
 </script>
 
 <template>
@@ -17,12 +17,12 @@ import GlitchedWriter from "vue-glitched-writer";
               'Linux enthusiast',
               'Hardware tinkerer',
               'Hobby gamer',
-              'Language lover',
+              'Language lover'
             ]"
             preset="typewriter"
             mode="erase"
             :queue="{
-              loop: true,
+              loop: true
             }"
           />
         </p>
@@ -98,7 +98,12 @@ import GlitchedWriter from "vue-glitched-writer";
                 class="p-3 border rounded-3xl outline-none resize-none w-full"
               ></textarea>
             </div>
-            <button type="submit" class="my-btn w-full">Send Message</button>
+            <button
+              type="submit"
+              class="my-btn w-full"
+            >
+              Send Message
+            </button>
           </form>
         </div>
       </div>
