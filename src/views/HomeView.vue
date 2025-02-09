@@ -10,6 +10,7 @@ import GlitchedWriter from "vue-glitched-writer";
     <div class="flex items-center h-screen">
       <div class="mx-auto max-w-xl">
         <p class="absolute font-mono text-xl">
+          >
           <glitched-writer
             :text="[
               'App developer',
@@ -25,7 +26,7 @@ import GlitchedWriter from "vue-glitched-writer";
             }"
           />
         </p>
-        <h2 class="my-12 text-4xl font-bold">Hi, I'm mauble 🤝</h2>
+        <h2 class="my-14 text-4xl font-bold">Hi, I'm mauble 🤝</h2>
         <p class="mb-4">Welcome to my personal website.</p>
         <p class="mb-4">
           I am a software developer from Germany who greatly enjoys coding and
@@ -35,8 +36,8 @@ import GlitchedWriter from "vue-glitched-writer";
           My specialities are infrastructure, backend and web development.
         </p>
         <p class="mb-4">
-          When I am not coding, I enjoy listening to music, freshing up my
-          language skills or playing some video games 😄
+          When I am not coding, I enjoy listening to music, playing some guitar,
+          freshening up my language skills or playing some video games 😄
         </p>
       </div>
     </div>
