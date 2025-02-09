@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import Text from "@/components/Text.vue";
 import WhatIDo from "@/components/WhatIDo.vue";
 import Projects from "@/components/Projects.vue";
 
@@ -8,16 +7,16 @@ import GlitchedWriter from "vue-glitched-writer";
 
 <template>
   <section>
-    <div class="flex flex-col items-center justify-center h-full h-screen">
-      <div class="px-7 mx-auto max-w-5xl">
+    <div class="flex items-center h-screen">
+      <div class="mx-auto max-w-xl">
         <p class="absolute font-mono text-xl">
           <glitched-writer
             :text="[
               'App developer',
               'Linux enthusiast',
               'Hardware tinkerer',
-              'Hobby gamer',
               'Language lover',
+              'Hobby gamer',
             ]"
             preset="typewriter"
             mode="erase"
@@ -26,35 +25,21 @@ import GlitchedWriter from "vue-glitched-writer";
             }"
           />
         </p>
-        <h2 class="my-12 text-4xl font-bold">Hi, I'm mauble 🤝</h2>
-        <p>Welcome to my personal website.</p>
-        <p>
-          I am a software developer from Germany who enjoys coding and tinkering
-          with electronics.
+        <h2 class="my-10 text-4xl font-bold">Hi, I'm mauble 🤝</h2>
+        <p class="mb-4">Welcome to my personal website.</p>
+        <p class="mb-4">
+          I am a software developer from Germany who greatly enjoys coding and
+          tinkering with electronics.
+        </p>
+        <p class="mb-4">
+          My specialities are infrastructure, backend and web development.
+        </p>
+        <p class="mb-4">
+          When I am not coding, I enjoy listening to music, freshing up my
+          language skills or playing some video games 😄
         </p>
       </div>
     </div>
-  </section>
-
-  <section id="about">
-    <Text
-      title="About."
-      img-url="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-1.2.1"
-    >
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-      voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-      clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-      amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-      nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-      diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-      Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
-      sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-      diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-      erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-      rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-      dolor sit amet.
-    </Text>
   </section>
 
   <section id="what-i-do">
