@@ -4,14 +4,14 @@ const projectItems = [
     name: "Systolic",
     text: "Systolic is an Android app for tracking your blood pressure and medication usage. You can set measurement reminders, make backups of your measurements, and export your history as a PDF file for easy sharing.",
     url: "/systolic",
-    img: "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-1.2.1",
+    img: "https://cdn.pixabay.com/photo/2018/07/08/19/59/blood-pressure-3524615_1280.jpg",
     tags: ["APP DEVELOPMENT", "CRUD", "UI / UX"],
   },
   {
     name: "Portfolio website",
     text: "My personal portfolio website that you are currently viewing. Built using Vue and Tailwind CSS.",
     url: "/mauble.github.io",
-    img: "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-1.2.1",
+    img: "https://cdn.pixabay.com/photo/2021/03/18/19/56/keyboard-6105750_1280.jpg",
     tags: ["WEB DEVELOPMENT", "UI / UX"],
   },
 ];
