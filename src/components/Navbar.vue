@@ -23,9 +23,7 @@ function toggleDropdown() {
   >
     <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
       <div class="flex h-16 items-center justify-between">
-        <RouterLink
-          class="my-text-color-navbar text-xl block my-animate my-on-hover-scale"
-          to="/"
+        <RouterLink class="my-text-color-navbar text-xl block my-animate" to="/"
           >✨ mauble</RouterLink
         >
         <div class="md:flex md:gap-2">
