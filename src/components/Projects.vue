@@ -20,7 +20,7 @@ const projectItems = [
 <template>
   <div class="px-7 mx-auto max-w-5xl w-full">
     <div class="flex flex-col items-stretch">
-      <h2 class="mb-24 text-center text-4xl font-bold">Featured projects.</h2>
+      <h2 class="mb-24 text-center text-3xl font-bold">Featured projects.</h2>
       <div class="gap-8 grid grid-cols-1 md:grid-cols-2">
         <div class="mb-12" v-for="item in projectItems">
           <a :href="$githubUrl + item.url">

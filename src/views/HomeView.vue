@@ -26,7 +26,7 @@ import GlitchedWriter from "vue-glitched-writer";
             }"
           />
         </p>
-        <h2 class="my-14 text-4xl font-bold">Hi, I'm mauble 🤝</h2>
+        <h2 class="my-14 text-3xl font-bold">Hi, I'm mauble 🤝</h2>
         <p class="mb-4">Welcome to my personal website.</p>
         <p class="mb-4">
           I am a software developer from Germany who greatly enjoys coding and
@@ -55,7 +55,7 @@ import GlitchedWriter from "vue-glitched-writer";
     <div class="w-full px-7 mx-auto max-w-5xl">
       <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
         <div class="m-auto">
-          <h2 class="text-dark mb-6 text-4xl font-bold">Contact.</h2>
+          <h2 class="text-dark mb-6 text-3xl font-bold">Contact.</h2>
           <div class="mb-12">
             <p>Do you have questions or want to send a request?</p>
             <p>Just send me a quick e-mail 🙌</p>
