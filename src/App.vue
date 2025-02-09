@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { RouterView } from 'vue-router';
-import Navbar from './components/Navbar.vue';
+import { RouterView } from "vue-router";
+import Navbar from "./components/Navbar.vue";
 </script>
 
 <template>
@@ -20,23 +20,11 @@ import Navbar from './components/Navbar.vue';
             <li class="my-text-color text-sm">Thanks for visiting 👋</li>
           </ul>
           <ul class="flex gap-6 justify-center lg:justify-end mt-8 sm:mt-0">
-            <a
-              :href="'mailto:' + $emailAddress"
-              class="my-icon"
-            >
-              <font-awesome-icon
-                :icon="['fas', 'envelope']"
-                size="xl"
-              />
+            <a :href="'mailto:' + $emailAddress" class="my-icon">
+              <font-awesome-icon :icon="['fas', 'envelope']" size="xl" />
             </a>
-            <a
-              :href="$githubUrl"
-              class="my-icon"
-            >
-              <font-awesome-icon
-                :icon="['fab', 'github']"
-                size="xl"
-              />
+            <a :href="$githubUrl" class="my-icon">
+              <font-awesome-icon :icon="['fab', 'github']" size="xl" />
             </a>
           </ul>
         </div>

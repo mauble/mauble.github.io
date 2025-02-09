@@ -1,21 +1,21 @@
 <script setup lang="ts">
 const skillItems = [
   {
-    name: 'Backend development',
-    text: 'I am experienced with building web services and database infrastructure.'
+    name: "Backend development",
+    text: "I am experienced with building web services and database infrastructure.",
   },
   {
-    name: 'Web development',
-    text: 'I love building sleek and responsive websites for all purposes.'
+    name: "Web development",
+    text: "I love building sleek and responsive websites for all purposes.",
   },
   {
-    name: 'Smartphone apps',
-    text: 'I have app making experience utilizing several frameworks like Flutter and Jetpack Compose.'
+    name: "Smartphone apps",
+    text: "I have app making experience utilizing several frameworks like Flutter and Jetpack Compose.",
   },
   {
-    name: 'Game design',
-    text: 'I have been passionate about game development ever since I was young.'
-  }
+    name: "Game design",
+    text: "I have been passionate about game development ever since I was young.",
+  },
 ];
 </script>
 
