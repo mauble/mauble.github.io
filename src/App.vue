@@ -6,9 +6,7 @@ import Navbar from "./components/Navbar.vue";
 <template>
   <body class="flex flex-col min-h-screen justify-between">
     <Navbar />
-    <main class="flex-grow space-y-80 mb-80">
-      <RouterView />
-    </main>
+    <RouterView />
     <footer>
       <div class="px-7 pb-8 mx-auto max-w-screen-xl">
         <div

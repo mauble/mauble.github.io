@@ -22,7 +22,7 @@ const router = createRouter({
   scrollBehavior(to) {
     if (to.hash) {
       return {
-        top: 192,
+        top: 0,
         el: to.hash,
         behavior: "smooth",
       };
