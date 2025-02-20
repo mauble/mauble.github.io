@@ -21,7 +21,7 @@ const projectItems = [
   <div class="flex flex-col items-stretch">
     <h2 class="mb-24 text-center text-3xl font-bold">Featured projects.</h2>
     <div class="gap-8 grid grid-cols-1 md:grid-cols-2">
-      <div class="mb-12" v-for="item in projectItems">
+      <div class="mb-12 md:mb-0" v-for="item in projectItems">
         <a :href="$githubUrl + item.url">
           <img
             :src="item.img"

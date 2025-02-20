@@ -28,7 +28,7 @@ function toggleDropdown() {
           >
           <div class="md:flex md:gap-2">
             <nav class="hidden md:block">
-              <ul class="flex items-center gap-6 text-lg">
+              <ul class="flex items-center gap-6">
                 <li v-for="item in navbarItems" :key="item.name">
                   <RouterLink
                     class="my-navbar-text"
