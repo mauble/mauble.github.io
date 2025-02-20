@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar.vue";
 </script>
 
 <template>
+  <span class="my-app-bg-color"></span>
   <body class="flex flex-col min-h-screen justify-between">
     <Navbar />
     <RouterView />
@@ -15,7 +16,7 @@ import Navbar from "./components/Navbar.vue";
           <ul
             class="flex flex-wrap gap-4 justify-center lg:justify-end text-xs"
           >
-            <li class="my-text-color text-sm">Thanks for visiting 👋</li>
+            <li class="text-sm">Thanks for visiting 👋</li>
           </ul>
           <ul class="flex gap-6 justify-center lg:justify-end mt-8 sm:mt-0">
             <a :href="'mailto:' + $emailAddress" class="my-icon">
@@ -30,3 +31,27 @@ import Navbar from "./components/Navbar.vue";
     </footer>
   </body>
 </template>
+
+<style>
+@keyframes BackgroundGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.my-app-bg-color {
+  animation: BackgroundGradient 40s ease-in-out infinite;
+  background: linear-gradient(170deg, #a84300, #030053, #000000);
+  background-size: 500% 200%;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+</style>
