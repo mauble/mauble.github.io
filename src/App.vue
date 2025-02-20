@@ -1,34 +1,17 @@
 <script setup lang="ts">
 import { RouterView } from "vue-router";
 import Navbar from "./components/Navbar.vue";
+import Footer from "./components/Footer.vue";
 </script>
 
 <template>
-  <span class="my-app-bg-color"></span>
-  <body class="flex flex-col min-h-screen justify-between">
+  <span class="my-app-bg-color" />
+  <body class="my-body-margin">
     <Navbar />
-    <RouterView />
-    <footer>
-      <div class="px-7 pb-8 mx-auto max-w-screen-xl">
-        <div
-          class="pt-8 my-border-color sm:flex sm:justify-between sm:items-center border-t"
-        >
-          <ul
-            class="flex flex-wrap gap-4 justify-center lg:justify-end text-xs"
-          >
-            <li class="text-sm">Thanks for visiting 👋</li>
-          </ul>
-          <ul class="flex gap-6 justify-center lg:justify-end mt-8 sm:mt-0">
-            <a :href="'mailto:' + $emailAddress" class="my-icon">
-              <font-awesome-icon :icon="['fas', 'envelope']" size="xl" />
-            </a>
-            <a :href="$githubUrl" class="my-icon">
-              <font-awesome-icon :icon="['fab', 'github']" size="xl" />
-            </a>
-          </ul>
-        </div>
-      </div>
-    </footer>
+    <div class="my-router-width">
+      <RouterView />
+    </div>
+    <Footer />
   </body>
 </template>
 
@@ -47,11 +30,19 @@ import Navbar from "./components/Navbar.vue";
 
 .my-app-bg-color {
   animation: BackgroundGradient 40s ease-in-out infinite;
-  background: linear-gradient(170deg, #a84300, #030053, #000000);
+  background: linear-gradient(170deg, #6b2b00, #030053, #000000);
   background-size: 500% 200%;
   z-index: -1;
   width: 100vw;
   height: 100vh;
   position: fixed;
+}
+
+.my-router-width {
+  @apply max-w-5xl px-9 mx-auto;
+}
+
+.my-body-margin {
+  @apply flex flex-col min-h-screen justify-between;
 }
 </style>
