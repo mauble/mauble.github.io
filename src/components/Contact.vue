@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full px-7 mx-auto max-w-5xl">
+  <div class="w-full">
     <div class="grid grid-cols-1 md:grid-cols-2">
       <div class="m-auto">
         <h2 class="text-dark mb-6 text-3xl font-bold">Contact.</h2>
