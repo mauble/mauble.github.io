@@ -41,4 +41,8 @@
   .my-icon {
     @apply my-animate my-on-hover-opacity;
   }
+
+  .my-header-footer-width {
+    @apply max-w-screen-xl px-7 mx-auto;
+  }
 }
