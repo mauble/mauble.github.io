@@ -31,7 +31,7 @@
   }
 
   .my-element-color {
-    @apply bg-gray-900;
+    @apply bg-gray-800;
   }
 
   .my-btn {
