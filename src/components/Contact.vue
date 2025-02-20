@@ -8,7 +8,9 @@
           <p>Just send me a quick e-mail 🙌</p>
         </div>
       </div>
-      <div class="p-8 relative rounded-3xl shadow-xl my-bg-color-element">
+      <div
+        class="my-element-color my-contact-text-color p-8 relative rounded-3xl shadow-xl"
+      >
         <form>
           <div class="mb-3">
             <input
@@ -37,3 +39,9 @@
     </div>
   </div>
 </template>
+
+<style>
+.my-contact-text-color {
+  @apply text-black;
+}
+</style>

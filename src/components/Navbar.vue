@@ -18,11 +18,11 @@ function toggleDropdown() {
 
 <template>
   <header
-    class="my-bg-color-navbar backdrop-blur-md fixed top-0 left-0 right-0 z-50"
+    class="my-navbar-color backdrop-blur-md fixed top-0 left-0 right-0 z-50"
   >
     <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
       <div class="flex h-16 items-center justify-between">
-        <RouterLink class="my-text-color-navbar text-xl block my-animate" to="/"
+        <RouterLink class="my-navbar-text text-xl block" to="/"
           >✨ mauble</RouterLink
         >
         <div class="md:flex md:gap-2">
@@ -30,7 +30,7 @@ function toggleDropdown() {
             <ul class="flex items-center gap-6 text-lg">
               <li v-for="item in navbarItems" :key="item.name">
                 <RouterLink
-                  class="text-base my-text-color-navbar my-animate my-on-hover-opacity"
+                  class="my-navbar-text"
                   :to="{ path: item.path, hash: item.hash }"
                   >{{ item.name }}</RouterLink
                 >
@@ -41,7 +41,7 @@ function toggleDropdown() {
           <div class="flex items-center gap-4">
             <div class="block md:hidden">
               <button
-                class="w-8 h-8 rounded-xl my-bg-color-element my-text-color my-animate my-on-hover-opacity"
+                class="my-element-color my-on-hover-opacity w-8 h-8 rounded-xl"
                 @click="toggleDropdown"
               >
                 <font-awesome-icon :icon="['fas', 'bars']" />
@@ -50,14 +50,11 @@ function toggleDropdown() {
           </div>
         </div>
       </div>
-      <div
-        v-if="isDropdownActive"
-        class="mb-6 space-y-2 md:hidden transition-all duration-300 ease-in-out transform"
-      >
+      <div v-if="isDropdownActive" class="mb-6 space-y-2 md:hidden">
         <RouterLink
           v-for="item in navbarItems"
           :key="item.name"
-          class="block text-center my-text-color-navbar my-animate my-on-hover-opacity"
+          class="my-navbar-text text-center block"
           :to="{ path: item.path, hash: item.hash }"
         >
           {{ item.name }}
@@ -66,3 +63,12 @@ function toggleDropdown() {
     </div>
   </header>
 </template>
+
+<style>
+.my-navbar-color {
+  @apply bg-black/[.1];
+}
+.my-navbar-text {
+  @apply text-white my-on-hover-opacity;
+}
+</style>

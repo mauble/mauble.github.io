@@ -26,14 +26,13 @@ const projectItems = [
           <a :href="$githubUrl + item.url">
             <img
               :src="item.img"
-              alt=""
-              class="mb-8 rounded-3xl shadow-2xl max-h-64 object-cover w-full my-animate my-on-hover-scale"
+              class="my-on-hover-scale mb-8 rounded-3xl shadow-2xl max-h-64 object-cover w-full"
           /></a>
           <h5 class="text-xl mb-3 font-bold">{{ item.name }}</h5>
-          <p class="flex-col my-text-color">{{ item.text }}</p>
+          <p class="flex-col">{{ item.text }}</p>
           <div class="mb-6 mt-8 flex flex-wrap gap-2">
             <div
-              class="p-2 text-sm font-semibold uppercase rounded-3xl my-bg-color-element my-text-color"
+              class="my-element-color p-2 text-sm font-semibold uppercase rounded-3xl"
               v-for="tag in item.tags"
             >
               <p>{{ tag }}</p>
